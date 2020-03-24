@@ -1,7 +1,8 @@
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     margin: 0 auto;
-    max-width: 540px;
+    max-width: 546px;
+    padding: 24px 48px;
     word-break: break-word;
 }
 
