@@ -24,6 +24,10 @@ body table {
     border-spacing: 0;
 }
 
+body p {
+    text-align: justify;
+}
+
 body table tr th {
     background-color: #ddd;
     border: 1px solid #ddd;
