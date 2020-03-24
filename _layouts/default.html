@@ -9,17 +9,18 @@
 <body>
 <h1>{{ site.title }}</h1>
 <ul class="nav">
-    <li><a href="mailto:{{ site.email }}">{{ site:email }}</a></li>
+    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
     {% if site.linkedin %}
-    <li><a href="//linkedin.com/in/{{ site.linkedin }}">LinkedIn</a></li>
+    <li><a href="//linkedin.com/in/{{ site.linkedin }}">linkedin.com/in/{{ site.linkedin }}</a></li>
     {% endif %}
     {% if site.github %}
-    <li><a href="//github.com/{{ site.github }}">Github</a></li>
+    <li><a href="//github.com/{{ site.github }}">github.com/{{ site.github }}</a></li>
     {% endif %}
 </ul>
 <hr />
 {{ content }}
-<hr />
-<footer>2020 &copy; <a href="/">baely.github.com</a>. Powered by Github Pages.</footer>
+<footer>
+    <hr />
+    2020 &copy; <a href="/">baely.github.com</a>. Powered by Github Pages.</footer>
 </body>
 </html>

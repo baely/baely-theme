@@ -54,3 +54,26 @@ footer {
     font-size: small;
     font-style: italic;
 }
+
+@media print {
+    body {
+        max-width: 576px;
+    }
+    h1, h2, h3, h4, h5, h6, p, ul {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    ul li {
+        display: inline;
+        margin: 0;
+    }
+    ul:not(.nav) li:not(:last-child)::after {
+        content: ', ';
+    }
+    footer {
+        display: none;
+    }
+}
