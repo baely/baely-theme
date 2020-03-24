@@ -8,6 +8,15 @@
 </head>
 <body>
 <h1>{{ site.title }}</h1>
+<ul class="nav">
+    <li><a href="mailto:{{ site.email }}">{{ site:email }}</a></li>
+    {% if site.linkedin %}
+    <li><a href="//linkedin.com/in/{{ site.linkedin }}">LinkedIn</a></li>
+    {% endif %}
+    {% if site.github %}
+    <li><a href="//github.com/{{ site.github }}">Github</a></li>
+    {% endif %}
+</ul>
 <hr />
 {{ content }}
 <hr />
